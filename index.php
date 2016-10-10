@@ -21,6 +21,30 @@
             $( "#formContainer" ).draggable();
           } );
         </script>
+        
+        
+        <script src="simpleCart.js"></script>
+        <script>
+            simpleCart.currency("GBP");
+            
+            simpleCart({
+                cartColumns: [
+                    { attr: "name" , label: "Item:" } ,
+//                    { attr: "price" , label: "Price", view: 'currency' } ,
+                    { view: "decrement" , label: false , text: "-" } ,
+                    { attr: "quantity" , label: "Qty" } ,
+                    { view: "increment" , label: false , text: "+" } ,
+//                    { attr: "total" , label: "SubTotal", view: 'currency' } ,
+//                    { view: "remove" , text: "Remove" , label: false }
+                ]
+//                cartStyle: "table";
+            });
+            
+            simpleCart({
+                cartStyle : "table"
+            });
+            
+        </script>
                 
     </head>
     
@@ -73,6 +97,7 @@
 
           <div class="container" style="background-color:#f1f1f1">
             <button type="button" class="cancelbtn">Cancel</button>
+              <button type="button" class="regbtn">Register</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
         </form>
@@ -106,27 +131,27 @@
             <div class="caro">
               <div class="item">
                 <a href="catalogue2.php"><img src="gnome.png" height="60" width="40"/></a>
-                <p>Mini-gnome</p>
+                <p>Mini Gnome</p>
               </div>
               <div class="item">
                   <a href="catalogue2.php"><img src="gnome2.png" height="60" width="40"/></a>
-                <p>Whistle gnome</p>
+                <p>Whistle Gnome</p>
               </div>
               <div class="item">
                   <a href="catalogue2.php"><img src="gnome3.png" height="60" width="40"/></a>
-                <p>Light gnome</p>
+                <p>Lamp Gnome</p>
               </div>
               <div class="item">
-                  <a href="catalogue2.php"><img src="gnome.png" height="60" width="40"/></a>
-                <p>Mini-gnome</p>
+                  <a href="catalogue2.php"><img src="gnome4.png" height="60" width="60"/></a>
+                <p>Cookie Gnome</p>
               </div>
               <div class="item">
-                  <a href="catalogue2.php"><img src="gnome2.png" height="60" width="40"/></a>
-                <p>Whistle gnome</p>
+                  <a href="catalogue2.php"><img src="gnome5.png" height="60" width="70"/></a>
+                <p>Pretentious Gnome</p>
               </div>
               <div class="item">
-                  <a href="catalogue2.php"><img src="gnome3.png" height="60" width="40"/></a>
-                <p>Light gnome</p>
+                  <a href="catalogue2.php"><img src="gnome6.png" height="60" width="50"/></a>
+                <p>Wise Gnome</p>
               </div>
             </div>
         </div>

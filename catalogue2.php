@@ -92,6 +92,7 @@
 
           <div class="container" style="background-color:#f1f1f1">
             <button type="button" class="cancelbtn">Cancel</button>
+              <button type="button" class="regbtn">Register</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
         </form>
@@ -107,9 +108,10 @@
                 <span class="simpleCart_quantity"></span> items, total - <span class="simpleCart_total"></span>
 <!--                <a href="javascript:;" class="simpleCart_checkout">Checkout</a>-->
                 <br>
+                <br>
                 <div class="simpleCart_items"><div class="item_name"></div><div class="item_quantity"></div></div>
                 <br>
-                <br>
+                
                 <a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
                 <button class="simpleCart_empty">Empty</button>
             </div>
