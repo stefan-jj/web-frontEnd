@@ -77,11 +77,29 @@
           </div>
         </form>
         </div>
+        
+        <div id="panelCon">
+        <div id="panelContainer2">
+            <div class="panel">
+            <br />
+            <br />
+                <p><b>The following is in your cart</b></p>
+                <span class="simpleCart_quantity"></span> items, total - <span class="simpleCart_total"></span>
+<!--                <a href="javascript:;" class="simpleCart_checkout">Checkout</a>-->
+                <br>
+                <div class="simpleCart_items"><div class="item_name"></div><div class="item_quantity"></div></div>
+                <br>
+                <br>
+                <a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
+                <button class="simpleCart_empty">Empty</button>
+            </div>
+            <div class="pull-me2">Cart Details</div>
+        </div>
+        </div>
             
         <div class="banner">
             <img src="bannerSpring.png">
         </div>
-        
         
             
         <div class="caroWrap">
