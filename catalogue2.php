@@ -26,12 +26,17 @@
                 cartColumns: [
                     { attr: "name" , label: "Item:" } ,
 //                    { attr: "price" , label: "Price", view: 'currency' } ,
-//                    { view: "decrement" , label: false , text: "-" } ,
+                    { view: "decrement" , label: false , text: "-" } ,
                     { attr: "quantity" , label: "Qty" } ,
-//                    { view: "increment" , label: false , text: "+" } ,
+                    { view: "increment" , label: false , text: "+" } ,
 //                    { attr: "total" , label: "SubTotal", view: 'currency' } ,
 //                    { view: "remove" , text: "Remove" , label: false }
                 ]
+//                cartStyle: "table";
+            });
+            
+            simpleCart({
+                cartStyle : "table"
             });
             
         </script>
@@ -99,10 +104,10 @@
             <br />
             <br />
                 <p><b>The following is in your cart</b></p>
-                <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+                <span class="simpleCart_quantity"></span> items, total - <span class="simpleCart_total"></span>
 <!--                <a href="javascript:;" class="simpleCart_checkout">Checkout</a>-->
                 <br>
-                <div class="simpleCart_items"><span class="item_name"></span><span class="item_quantity"></span></div>
+                <div class="simpleCart_items"><div class="item_name"></div><div class="item_quantity"></div></div>
                 <br>
                 <br>
                 <a href="javascript:;" class="simpleCart_checkout"><button>Checkout</button></a>
