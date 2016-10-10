@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>NB Gardens' Gnometastic Website</title>
+        <meta name="description" content="An exiting website from which to buy gnomes">
+        <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="javascript.js"> 
+        </script>
+        
+        <script>
+          $( function() {
+            $( "#formContainer" ).draggable();
+          } );
+        </script>
+    </head>
+    
+    <body>
+        <div id="pageWrap">
+        <div class="top">
+            <img src="topbanner.png" width="890" height="90">
+        </div>
+        
+        <div class="menuWrap">
+        <div class="menu">
+            <ul class="nav" id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="catalogue2.html">Catalogue2</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+            <div class="cart">
+                <div id="log">
+                    <button class="logBut" onclick="document.getElementById('formContainer').style.display='block'">Login</button>
+                </div>
+                
+                <div class="cartImg">
+                <img src="cart.png" height="40" width="40">
+                </div>
+            </div>
+        </div>
+            
+        <div id="formContainer">
+        <form action="action_page.php">
+            <span onclick="document.getElementById('formContainer').style.display='none'" 
+        class="close" title="Close Modal">&times;</span>
+          <div class="imgcontainer">
+            <img src="login.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="logButton">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+        </div>
+        
+        <div class="banner">
+            <img src="bannerSpring.png">
+        </div>
+        
+        <div class="mainCat">
+            
+            <div class="titleP">
+                <p>
+                    Our Products
+                </p>
+            </div>
+                
+            <div class="left">
+                <div class="productLeft1">
+                    <img id="card1" src="gnome2.png">
+                    <button class="buttonP" type="button" onclick="flip1()">Buy Me</button>
+                    <p>
+                        Yours for only £200
+                    </p>
+                </div>
+                
+                <div class="productLeft">
+                    <img id="card2" src="gnome2.png">
+                    <button class="buttonP" type="button" onclick="flip2()">Buy Me</button>
+                    <p>
+                        Yours for only £200
+                    </p>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="productRight1">
+                    <img id="card3" src="gnome2.png">
+                    <button class="buttonP" type="button" onclick="flip3()">Buy Me</button>
+                    <p>
+                        Yours for only £200
+                    </p>
+                </div>
+                
+                
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="productRight">
+                        <img src="gnome2.png">
+                        
+                        <p>
+                            Yours for only £200
+                        </p>
+                    </div>
+                        <div class="prodBack">
+                            <div class="prodInfo">
+                                <p>Click below to buy this awesome gnome!</p>
+                                <button class="buttonP" type="button" onclick="purchase()">Buy Me</button>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <p>
+                Company info and sitemap etc
+            </p>
+        </div>
+        </div>
+    </body>
+    
+</html>
